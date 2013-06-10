@@ -103,6 +103,7 @@ Placeholder.prototype.contents = function(){
  */
 
 Placeholder.prototype.onmousedown = function(e){
+  if (!this.placed()) return;
   var sel = window.getSelection();
   var range = document.createRange();
   range.setStart(this.el, 0);
