@@ -2,7 +2,7 @@
   "name": "editable-placeholder",
   "repo": "yields/editable-placeholder",
   "description": "Editable placeholder.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": ["editable", "placeholder"],
   "license": "MIT",
   "main": "index.js",
@@ -11,7 +11,6 @@
   "dependencies": {
     "component/classes": "*",
     "component/events": "*",
-    "component/domify": "*",
     "component/raf": "*"
   }
 }
