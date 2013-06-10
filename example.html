@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>editable placeholder</title>
+    <link rel='stylesheet' href='build/build.css'>
+    <script src='build/build.js'></script>
+    <style>
+      body {
+        padding: 100px;
+        font-family: 'Helvetica Neue', 'Lucida Grande';
+        font-weight: 200;
+      }
+
+      h1, div {
+        font-weight: 200;
+      }
+
+      h1:focus,
+      div:focus {
+        outline: 0 none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <div></div>
+
+    <script>
+      var placeholder = require('editable-placeholder')
+        , div = document.querySelector('div')
+        , h1 = document.querySelector('h1');
+
+      div.contentEditable = true;
+      h1.contentEditable = true;
+
+      placeholder(h1, 'Type a title');
+      placeholder(div, 'Type your post');
+    </script>
+  </body>
+</html>
