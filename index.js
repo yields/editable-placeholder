@@ -124,7 +124,6 @@ Placeholder.prototype.onkeydown = function(e){
 
   // placeholder
   raf(function(){
-    console.log(self.contents());
     if ('' != self.contents()) return;
     self.place();
   });
