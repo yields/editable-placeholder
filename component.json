@@ -2,7 +2,7 @@
   "name": "editable-placeholder",
   "repo": "yields/editable-placeholder",
   "description": "Editable placeholder.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": ["editable", "placeholder"],
   "license": "MIT",
   "main": "index.js",
