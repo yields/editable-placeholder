@@ -111,6 +111,7 @@ Placeholder.prototype.onmousedown = function(e){
   sel.removeAllRanges();
   sel.addRange(range);
   e.preventDefault();
+  this.el.focus();
 };
 
 /**
