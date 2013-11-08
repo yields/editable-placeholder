@@ -1,4 +1,3 @@
-
 /**
  * dependencies
  */
@@ -37,6 +36,7 @@ function Placeholder(el, str){
  */
 
 Placeholder.prototype.place = function(){
+  if (this.contents()) return;
   this.classes.add('editable-placeholder');
   this.el.textContent = this.str;
   return this;
