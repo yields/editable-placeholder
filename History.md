@@ -1,4 +1,9 @@
 
+0.1.2 / 2013-11-08
+==================
+
+ * don't place placeholder if element not empty [juliangruber]
+
 0.1.1 / 2013-07-03
 ==================
 
