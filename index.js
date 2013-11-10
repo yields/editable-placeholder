@@ -72,6 +72,8 @@ Placeholder.prototype.placed = function(){
  */
 
 Placeholder.prototype.bind = function(){
+  this.events.bind('keyup', 'onkeydown');
+  this.events.bind('paste', 'onkeydown');
   this.events.bind('mousedown');
   this.events.bind('keydown');
   return this;
@@ -120,12 +122,14 @@ Placeholder.prototype.onmousedown = function(e){
 
 Placeholder.prototype.onkeydown = function(e){
   var self = this;
+  var id;
 
   // unplace
   if (this.placed()) this.unplace();
 
   // placeholder
-  raf(function(){
+  id = raf(function(){
+    raf.cancel(id);
     if ('' != self.contents()) return;
     self.place();
   });
