@@ -9,8 +9,8 @@
   "scripts": ["index.js"],
   "styles": ["editable-placeholder.css"],
   "dependencies": {
-    "component/classes": "*",
-    "component/events": "*",
-    "component/raf": "*"
+    "component/classes": "1.2.1",
+    "component/events": "1.0.9",
+    "component/raf": "1.2.0"
   }
 }
